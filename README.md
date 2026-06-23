@@ -1,28 +1,95 @@
-# Titanic Survival Analysis 🚢
+# Titanic Survival Prediction 🚢
 
 ## Project Overview
-This project analyzes the Titanic dataset to identify survival patterns based on gender, passenger class, and age using Python.
+
+This project predicts whether a passenger survived the Titanic disaster using a **Logistic Regression** machine learning model. The project includes data cleaning, exploratory data analysis (EDA), feature engineering, and model evaluation.
+
+---
 
 ## Dataset
-- Source: Kaggle – Titanic: Machine Learning from Disaster
 
-## Tools & Libraries
-- Python
-- Pandas
-- NumPy
-- Matplotlib
-- Seaborn
+The dataset contains passenger information such as:
 
-## Project Steps
-- Loaded the Titanic dataset
-- Cleaned data and handled missing values (Age filled with median)
-- Performed exploratory data analysis
-- Visualized survival trends
+* Passenger Class (Pclass)
+* Gender (Sex)
+* Age
+* Fare
+* Family Information (SibSp, Parch)
+* Embarkation Port (Embarked)
+* Survival Status (Target Variable)
 
-## Key Insights
-- Females had higher survival rates than males
-- First-class passengers had better survival chances
-- Children showed higher survival rates
+---
+
+## Data Preprocessing
+
+* Filled missing values in **Age** using the median.
+* Filled missing values in **Embarked** using the mode.
+* Dropped the **Cabin** column due to excessive missing values.
+* Encoded categorical features for machine learning.
+
+---
+
+## Exploratory Data Analysis (EDA)
+
+### Key Findings
+
+* Female passengers had a much higher survival rate than males.
+* First-class passengers were more likely to survive than third-class passengers.
+* Children had better survival chances compared to older passengers.
+
+---
+
+## Machine Learning Model
+
+**Algorithm Used:** Logistic Regression
+
+### Features Used
+
+* Pclass
+* Sex
+* Age
+* SibSp
+* Parch
+* Fare
+* Embarked
+
+### Train-Test Split
+
+* Training Data: 75%
+* Testing Data: 25%
+
+---
+
+## Results
+
+### Model Accuracy
+
+**≈ 80.7%**
+
+### Evaluation Metrics
+
+* Accuracy Score
+* Classification Report
+* Confusion Matrix
+
+---
+
+## Technologies Used
+
+* Python
+* Pandas
+* NumPy
+* Matplotlib
+* Seaborn
+* Scikit-learn
+
+---
 
 ## Conclusion
-This project demonstrates data cleaning, exploratory data analysis, and data visualization skills using a real-world dataset.
+
+The Logistic Regression model achieved approximately **80.7% accuracy** in predicting Titanic passenger survival. The analysis shows that **gender, passenger class, and age** were the most influential factors affecting survival.
+
+---
+
+**Author:** Tanul Sharma
+
